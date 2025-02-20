@@ -1,6 +1,6 @@
 {
-  "name": "@natanbarbosa2/boleto.ts",
-  "version": "1.0.15",
+  "name": "@viniciussoares25/boleto.ts",
+  "version": "1.0.18",
   "description": "Gerar boletos para vários bancos",
   "main": "lib/index.js",
   "directories": {
@@ -52,10 +52,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NatanB4/boleto.ts.git"
+    "url": "git+https://github.com/ViniciusSoares-Developer/boletos.ts.git"
   },
   "bugs": {
-    "url": "https://github.com/NatanB4/boleto.ts/issues"
+    "url": "https://github.com/ViniciusSoares-Developer/boletos.ts/issues"
   },
-  "homepage": "https://github.com/NatanB4/boleto.ts#readme"
+  "homepage": "https://github.com/ViniciusSoares-Developer/boletos.ts#readme"
 }
