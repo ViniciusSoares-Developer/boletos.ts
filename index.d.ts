@@ -1,6 +1,6 @@
-import {WriteStream} from 'fs';
+import { WriteStream } from "fs";
 
-declare module 'boletos.ts' {
+declare module "@viniciussoares25/boletos.ts" {
   export interface BoletoInfo {
     banco: Bancos;
     pagador: PagadorInterface;
@@ -148,7 +148,7 @@ declare module 'boletos.ts' {
   }
 
   interface Datas {
-    comDocumento(documento: Date | string, locate?: 'usa' | 'brl'): this;
+    comDocumento(documento: Date | string, locate?: "usa" | "brl"): this;
 
     getDocumento(): Date;
 
@@ -156,14 +156,14 @@ declare module 'boletos.ts' {
 
     comProcessamento(
       processamento: Date | string,
-      locate?: 'usa' | 'brl'
+      locate?: "usa" | "brl"
     ): this;
 
     getProcessamento(): Date;
 
     getProcessamentoFormatado(): string;
 
-    comVencimento(vencimento: Date | string, locate?: 'usa' | 'brl'): this;
+    comVencimento(vencimento: Date | string, locate?: "usa" | "brl"): this;
 
     getVencimento(): Date;
 
@@ -213,7 +213,7 @@ declare module 'boletos.ts' {
     especieDocumento: string;
     valor: number;
     datas: DatasInterface;
-    emv?: string
+    emv?: string;
     imagemQrCode?: string;
   }
 
@@ -313,49 +313,41 @@ declare module 'boletos.ts' {
     getLinhaDigitavelFormatado(): { linha: string; numeroDocumento: string };
   }
 
-  export {Pagador, Beneficiario, Datas, Endereco, Boleto};
+  export { Pagador, Beneficiario, Datas, Endereco, Boleto };
 
-  class Itau {
-  }
+  class Itau {}
 
-  class Caixa {
-  }
+  class Caixa {}
 
-  class Bradesco {
-  }
+  class Bradesco {}
 
-  class BancoBrasil {
-  }
+  class BancoBrasil {}
 
-  class Cecred {
-  }
+  class Cecred {}
 
-  class Sicoob {
-  }
+  class Sicoob {}
 
-  class Santander {
-  }
+  class Santander {}
 
-  class Sicredi {
-  }
+  class Sicredi {}
 
   class Bancos {
     static Itau: typeof Itau;
-    static '341': typeof Itau;
+    static "341": typeof Itau;
     static Caixa: typeof Caixa;
-    static '104': typeof Caixa;
+    static "104": typeof Caixa;
     static Bradesco: typeof Bradesco;
-    static '237': typeof Bradesco;
+    static "237": typeof Bradesco;
     static BancoBrasil: typeof BancoBrasil;
-    static '001': typeof BancoBrasil;
+    static "001": typeof BancoBrasil;
     static Cecred: typeof Cecred;
-    static '085': typeof Cecred;
+    static "085": typeof Cecred;
     static Sicoob: typeof Sicoob;
-    static '756': typeof Sicoob;
+    static "756": typeof Sicoob;
     static Santander: typeof Santander;
-    static '033': typeof Santander;
+    static "033": typeof Santander;
     static Sicredi: typeof Sicredi;
-    static '748': typeof Sicredi;
+    static "748": typeof Sicredi;
   }
 
   export {
