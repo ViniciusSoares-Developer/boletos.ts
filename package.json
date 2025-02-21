@@ -1,6 +1,6 @@
 {
   "name": "@viniciussoares25/boletos.ts",
-  "version": "1.0.20",
+  "version": "1.0.21",
   "description": "Gerar boletos para vários bancos",
   "main": "lib/index.js",
   "directories": {
